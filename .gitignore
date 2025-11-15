@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Dataset Zip
+LLaVA-CC3M-Pretrain-595K.zip
+minimind-v_dataset.zip
+
+save/
+Qwen2.5-0.5B-Instruct/
+siglip-base-patch16-224/
+images/
+demo_vqa.py
