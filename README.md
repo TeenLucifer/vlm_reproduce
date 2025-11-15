@@ -1,3 +1,7 @@
+---
+render_with_liquid: false
+---
+
 # Qwen-SigLIP 多模态视觉问答系统
 
 本项目基于 Qwen2.5-0.5B 语言模型和 SigLIP 视觉编码器构建了一个多模态模型，赋予了Qwen2.5的文本模型视觉理解能力。
