@@ -20,7 +20,7 @@ $$
 $$
 
 #### 推导过程
-LLM本质是一个词表维度的分类任务，因此选用交叉熵作为损失函数，交叉熵表示为：
+LLM本质是一个词表维度的分类任务，因此选用交叉熵作为损失函数，交叉熵表示为
 
 $$
 \text{CrossEntropy}=-\sum_{i=1}^N y_i\log p_i
@@ -32,7 +32,7 @@ $$
 \text{CrossEntropy}=-\sum_{t=1}^T\sum_{i=1}^N y_i\log p_i
 $$
 
-label中每个token用one-hot编码，因此label的概率分布中只有$x_t$对应位置的概率为1，其余都是0。因此可以写为：
+label中每个token用one-hot编码，因此label的概率分布中只有$x_t$对应位置的概率为1，其余都是0。因此可以写为
 
 $$
 \text{CrossEntropy-Loss}=-\sum_{t=1}^T\log P_\theta(x_t|x_{<T})
