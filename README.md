@@ -26,19 +26,19 @@ $$
 \text{CrossEntropy}=-\sum_{i=1}^N y_i\log p_i
 $$
 
-对于一条长度为$T$的序列来说，交叉熵为：
+对于一条长度为T的序列来说，交叉熵为：
 
 $$
 \text{CrossEntropy}=-\sum_{t=1}^T\sum_{i=1}^N y_i\log p_i
 $$
 
-label中每个token用one-hot编码，因此label的概率分布中只有$x_t$对应位置的概率为1，其余都是0。因此可以写为
+label中每个token用one-hot编码，因此label的概率分布中只有xt对应位置的概率为1，其余都是0。因此可以写为
 
 $$
 \text{CrossEntropy-Loss}=-\sum_{t=1}^T\log P_\theta(x_t|x_{<T})
 $$
 
-式中$x_t$表示真实序列中第$t$位置的token，$P_\theta(x_t)$表示模型生成第$t$个token为$x_t$的概率。
+式中xt表示真实序列中第t位置的token，P(xt)表示模型生成第t个token为xt的概率。
 
 ## 📚 数据集内容
 ### 预训练数据格式
