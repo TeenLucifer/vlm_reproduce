@@ -26,7 +26,7 @@ $$
 \text{CrossEntropy}=-\sum_{i=1}^N y_i\log p_i
 $$
 
-对于一条长度为T的序列来说，交叉熵为：
+对于一条长度为T的序列来说，交叉熵为
 
 $$
 \text{CrossEntropy}=-\sum_{t=1}^T\sum_{i=1}^N y_i\log p_i
