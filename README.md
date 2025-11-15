@@ -13,7 +13,7 @@
 根据上述模型结构设计，本项目将SigLip拼接到Qwen2.5-0.5B上，对齐了SigLip的输出与Qwen2.5-0.5B的输入。核心是训练了一个**对齐层**，让Qwen2.5-0.5B能够拿到并理解图像的特征，模型架构如下所示：
 ![framework](docs/framework.png)
 ### 损失函数
-预训练和指令微调都选择交叉熵损失函数:
+预训练和指令微调都选择交叉熵损失函数
 
 $$
 \text{CrossEntropy-Loss}=-\sum_{t=1}^T\log P_\theta(x_t|x_{<T})
